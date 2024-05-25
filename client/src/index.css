@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ @layer base{
+    @font-face {
+        font-family: "Jost";
+        src: url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap');
+    }
+    * {
+        padding: 0;
+        left: 0;
+        box-sizing: border-box;
+        font-family: "Jost";
+    }
+    .sidebar-container {
+        @apply  h-[96%] w-[20rem] rounded-3xl ml-6 p-4 border transition-all duration-500 border-solid  relative;
+    }
+} 
+
+ @layer components{
+    .header-icon {
+        @apply w-6 h-6 cursor-pointer
+    }
+    
+} 
+
